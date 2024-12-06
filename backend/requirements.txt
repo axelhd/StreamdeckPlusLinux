@@ -1,0 +1,5 @@
+streamdeck
+pillow
+pulsectl
+gevent
+telnetlib3

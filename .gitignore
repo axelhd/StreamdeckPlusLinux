@@ -1,0 +1,14 @@
+
+backend/.idea/
+
+backend/junk/
+
+backend/pulsectl_test.py
+
+backend/telnetlib_test.py
+
+backend/arc.md
+
+frontend/lib/
+
+frontend/backup/

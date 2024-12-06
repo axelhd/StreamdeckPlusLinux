@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="streamDeck.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="32"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="197"/>
+        <CursorPos X="15" Y="234"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-db/src/base/db.pas"/>
+        <UnitName Value="DB"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1459"/>
+        <CursorPos X="5" Y="1478"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-db/src/sqldb/sqldb.pp"/>
+        <UnitName Value="SQLDB"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="744"/>
+        <CursorPos X="26" Y="778"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="210" Column="5" TopLine="169"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="181" Column="5" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="182" Column="38" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="204" Column="41" TopLine="176"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="179" Column="30" TopLine="173"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="199" Column="33" TopLine="172"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="170" Column="100" TopLine="156"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="179" Column="53" TopLine="167"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="181" Column="111" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="182" Column="33" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="181" Column="139" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="184" Column="19" TopLine="160"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="182" Column="37" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="183" Column="26" TopLine="165"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="186" Column="32" TopLine="166"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="188" Column="5" TopLine="161"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="203" Column="57" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="193" Column="74" TopLine="169"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="192" Column="74" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="99" Column="17" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="242" Column="14" TopLine="213"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="87" Column="9" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="146" Column="11" TopLine="117"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="156" Column="14" TopLine="129"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="179" Column="16" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="235" Column="16" TopLine="199"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="234" TopLine="198"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="233" Column="6" TopLine="198"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="87" TopLine="67"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
