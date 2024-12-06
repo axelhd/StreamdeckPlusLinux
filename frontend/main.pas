@@ -33,6 +33,7 @@ type
     procedure Dial2Change(Sender: TObject);
     procedure Dial3Change(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormCreate(Sender: TObject);
     procedure SQLite3Connection1AfterConnect(Sender: TObject);
   private
 
@@ -230,9 +231,12 @@ begin
   DBConnection.Connected := False;
 
 end;
+
+procedure TForm1.FormCreate(Sender: TObject);
 begin
-  Sleep(5000);
   db_stuff();
   dial_stuff();
+end;
+
 end.
 
