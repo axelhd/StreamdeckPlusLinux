@@ -61,6 +61,7 @@ object Form1: TForm1
       TabOrder = 0
       Text = 'Dial0'
       OnChange = Dial0Change
+      OnClick = Dial0Click
     end
     object Dial1: TComboBox
       Left = 197
@@ -74,6 +75,7 @@ object Form1: TForm1
       TabOrder = 1
       Text = 'Dial1'
       OnChange = Dial1Change
+      OnClick = Dial1Click
     end
   end
   object Panel1: TPanel
@@ -98,6 +100,7 @@ object Form1: TForm1
       TabOrder = 0
       Text = 'Dial2'
       OnChange = Dial2Change
+      OnClick = Dial2Click
     end
     object Dial3: TComboBox
       Left = 197
@@ -112,6 +115,7 @@ object Form1: TForm1
       TabOrder = 1
       Text = 'Dial3'
       OnChange = Dial3Change
+      OnClick = Dial3Click
     end
   end
   object DataSource1: TDataSource

@@ -29,9 +29,13 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Dial0Change(Sender: TObject);
+    procedure Dial0Click(Sender: TObject);
     procedure Dial1Change(Sender: TObject);
+    procedure Dial1Click(Sender: TObject);
     procedure Dial2Change(Sender: TObject);
+    procedure Dial2Click(Sender: TObject);
     procedure Dial3Change(Sender: TObject);
+    procedure Dial3Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure SQLite3Connection1AfterConnect(Sender: TObject);
@@ -222,6 +226,30 @@ end;
 procedure TForm1.Dial3Change(Sender: TObject);
 begin
   dial_select(Dial3.ItemIndex, 3);
+end;
+
+procedure TForm1.Dial0Click(Sender: TObject);
+begin
+  db_stuff();
+  dial_stuff();
+end;
+
+procedure TForm1.Dial1Click(Sender: TObject);
+begin
+  db_stuff();
+  dial_stuff();
+end;
+
+procedure TForm1.Dial2Click(Sender: TObject);
+begin
+  db_stuff();
+  dial_stuff();
+end;
+
+procedure TForm1.Dial3Click(Sender: TObject);
+begin
+  db_stuff();
+  dial_stuff();
 end;
 
 procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);

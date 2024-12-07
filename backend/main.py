@@ -47,30 +47,38 @@ volume = {0: 50, 1: 50, 2: 50, 3: 50}
 
 pulse = pulsectl.Pulse('my-client-name')
 CHANGE_VOL_AMOUNT = 5
-con = sqlite3.connect("../frontend/db")
-cur = con.cursor()
+
+
+# con = sqlite3.connect("../frontend/db")
+# cur = con.cursor()
 
 
 def update_db():
+    local_con = sqlite3.connect(r"../frontend/db")
+    local_cur = local_con.cursor()
     print("update_db")
     # Write to sink
     # Clear DB
+    global sink
+    global sink_app_name
+    global sink_media_name
+
     query = f"DELETE FROM sink"
     print(query)
-    cur.execute(query)
+    local_cur.execute(query)
     for i, s in enumerate(sink):
         # Add sinks
         escaped_media_name = str(sink_media_name[i]).replace("'", "''")
         query = f"INSERT INTO sink VALUES ('{sink_app_name[i]}', '{escaped_media_name}', {s})"
         print(query)
-        cur.execute(query)
-        con.commit()
+        local_cur.execute(query)
+        local_con.commit()
         print(i, s)
 
     # Get selected
     query = f"SELECT * FROM selected"
     print(query)
-    selected = cur.execute(query)
+    selected = local_cur.execute(query)
     for i in selected.fetchall():
         s = i
         print(s)
@@ -79,6 +87,10 @@ def update_db():
         # s[2] INDEX
         # s[3] DIAL
         selected_sink[s[3]] = s[2]
+
+    sink = []
+    sink_app_name = []
+    sink_media_name = []
 
 
 def update_sinks():
@@ -113,6 +125,9 @@ update_db()
 # callback when buttons are pressed or released
 def key_change_callback(deck, key, key_state):
     print("Key: " + str(key) + " state: " + str(key_state))
+    if key == 0 and key_state:
+        update_sinks()
+        update_db()
 
     deck.set_key_image(key, img_pressed_bytes if key_state else img_released_bytes)
 
@@ -147,12 +162,12 @@ def dial_change_callback(deck, dial, event, value):
                 direction = -1
             if value > 0:
                 direction = 1
-        con2 = sqlite3.connect(r"../frontend/db")
-        cur2 = con2.cursor()
+        local_con = sqlite3.connect(r"../frontend/db")
+        local_cur = local_con.cursor()
 
         query = f"SELECT * FROM selected WHERE dial={dial}"
         print(query)
-        res = cur2.execute(query)
+        res = local_cur.execute(query)
         change_volume(res.fetchone()[2], direction)
 
 
